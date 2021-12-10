@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Register</title>
 </head>
 <body>
-$END$
+    <h1>Sign up here: </h1>
+    <form action="{% url 'register' %}" method="post">{% csrf_token %}
+        <input type="text" name="name" placeholder="Name"/>
+        <br>
+        <br>
+        <input type="number" name="age" placeholder="Age"/>
+        <br>
+        <br>
+        <input type="text" name="gender" placeholder="Gender"/>
+        <br>
+        <br>
+        <input type="text" name="login" placeholder="Login"/>
+        <br>
+        <br>
+        <input type="password" name="parol" placeholder="Password"/>
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+        <button><a href="{% url 'login' %}">Login</a></button>
+    </form>
 </body>
 </html>

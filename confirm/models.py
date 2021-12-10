@@ -14,4 +14,4 @@ class Client(models.Model):
     def __str__(self):
         return f"{self.name} ({self.age})"
 
-#We are using django.contrib.auth.model's User class to store client's login and password data
+#We are using django.contrib.confirm.model's User class to store client's login and password data
